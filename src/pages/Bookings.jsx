@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+grimport React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import dayjs from 'dayjs';
 import {
@@ -433,18 +433,7 @@ const Bookings = () => {
                   ))}
                 </Select>
               </FormControl>
-              {/* Gross Amount */}
-              <TextField
-                label="Gross Amount"
-                type="number"
-                placeholder="Gross Amount"
-                value={booking.amountGuestPaid}
-                onChange={e => setBooking({ ...booking, amountGuestPaid: e.target.value })}
-                inputProps={{
-                  min: 0,
-                  step: "0.01"
-                }}
-              />
+              
 
               {/* Commission Amount */}
               <TextField
